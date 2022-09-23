@@ -1,0 +1,15 @@
+@import '~antd/dist/antd.css';
+// @import '~normalize.css/normalize.css';
+
+.App {
+  display: flex;
+  height: 100vh;
+
+  & > aside {
+    width: 256px;
+  }
+
+  & > main {
+    width: calc(100vw - 256px);
+  }
+}
