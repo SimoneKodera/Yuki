@@ -7,8 +7,8 @@ const routes = [
         key: 'todo-list'
     },
     {
-        label: 'Home',
-        key: 'home'
+        label: 'Animation',
+        key: 'animation'
     },
     {
         label: 'About',

@@ -1,4 +1,4 @@
-.todo-list-page{
+.todo-list-page {
     display: flex;
 
     .section-left {
@@ -6,44 +6,45 @@
     }
 
     .section-right {
-        flex: 1
-    };
+        flex: 1;
+        padding: 0 16px;
+        box-sizing: border-box;
 
-.ipt-wrapper{
-    margin-bottom: 16px;
-}
+        & > nav {
+            margin-bottom: 16px;
+        }
 
-.notes-wrapper {
-    ul{
-        padding: 0px;
-        li {
-                list-style-type: none;
-                padding: 16px;
-                border: 1px solid #ddd;
-                border-radius: 8px;
-                margin-bottom: 8px;
-                cursor: pointer;
-                box-shadow: 0 0 20px 2px rgba(0,0,0,0.1);
-                
-                &:hover {
-                    background-color: rgba(255,255,255,0.6);
+        .notes-wrapper {
+            ul {
+                padding: 0px;
+
+                li {
+                    list-style-type: none;
+                    padding: 16px;
+                    border: 1px solid #ddd;
+                    border-radius: 8px;
+                    margin-bottom: 8px;
+                    cursor: pointer;
+                    box-shadow: 0 0 20px 2px rgba(0, 0, 0, 0.1);
+
+                    &:hover {
+                        background-color: rgba(255, 255, 255, 0.6);
+                    }
                 }
-            }
-        
-            .dot {
-                width: 20px;
-                height: 20px;
-                border: 1px solid #ddd;
-                border-radius: 50%;
-                cursor: pointer;
-                background-color: #fafafa;
-                
-            }
 
-            .text {
-                user-select: none;
+                .dot {
+                    width: 20px;
+                    height: 20px;
+                    border: 1px solid #ddd;
+                    border-radius: 50%;
+                    cursor: pointer;
+                    background-color: #fafafa;
+                }
+
+                .text {
+                    user-select: none;
+                }
             }
         }
     }
 }
-
