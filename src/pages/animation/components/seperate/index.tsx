@@ -13,7 +13,7 @@ export const SeperateBall = () => {
     }
 
     return (
-        <section className="seperate-ball" onDoubleClick={addCls}>
+        <section className="seperate-ball animation-box" onDoubleClick={addCls}>
             <div className={'island ' + cls}></div>
             <div className='btn'>
                 double click me

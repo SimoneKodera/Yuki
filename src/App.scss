@@ -5,11 +5,31 @@
   display: flex;
   height: 100vh;
 
-  & > aside {
+  &>aside {
     width: 256px;
   }
 
-  & > main {
+  &>main {
     width: calc(100vw - 256px);
+  }
+}
+
+.animation-box {
+  width: 200px;
+  height: 200px;
+  box-sizing: border-box;
+  padding: 16px;
+  border-radius: 16px;
+  cursor: pointer;
+  user-select: none;
+  margin-right: 20px;
+  margin-bottom: 16px;
+
+  box-shadow: 1px 5px 13px 0.01px #9f7777;
+
+
+  &:hover {
+    // transform: scale(1.03);
+    box-shadow: 2px 10px 20px 0.1px #9f7777;
   }
 }

@@ -1,0 +1,60 @@
+.groove-tab {
+    background-color: #EEE3CB;
+    padding: 0 !important;
+    overflow: hidden;
+
+    // &:hover {
+        // transform: rotate(360deg);
+        // transition: .4s;
+    // }
+    
+    *{
+        transition: none;
+    }
+
+    .tab-wrapper {
+        width: 66px;
+        height: 200px;
+        background-color: #704F4F;
+        display: flex;
+        flex-direction: column;
+        box-sizing: content-box;
+        padding-left: 34px;
+    }
+
+    .tab {
+        flex: 1;
+
+        .tab-inner {
+            height: 100%;
+        }
+    }
+
+    .tab-active {
+
+        .tab-inner {
+            background-color: #EEE3CB;
+            border-radius: 8px 0 0 8px;
+        }
+    }
+
+    .tab-last {
+        background-color: #EEE3CB;
+
+        .tab-inner {
+            border-radius: 0 0 8px 0;
+            background-color: #704F4F;
+
+        }
+    }
+
+    .tab-next {
+        background-color: #EEE3CB;
+
+        .tab-inner {
+            border-radius: 0 8px 0 0;
+            background-color: #704F4F;
+
+        }
+    }
+}
