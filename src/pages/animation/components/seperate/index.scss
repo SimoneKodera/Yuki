@@ -2,10 +2,6 @@
     background-color: #f8ede3;
     transition: .7s;
 
-    &:hover {
-        // box-shadow: 2px 10px 20px 1px #704F4F;
-    }
-
     .btn {
         margin-top: 40px;
         width: 100%;
@@ -47,11 +43,11 @@
     }
 
     .merge {
-        animation: merge-left 800ms ease-in-out forwards;
+        animation: merge-left 800ms ease-in-out forwards ;
     }
 
     .merge::after {
-        animation: merge-right 800ms ease-in-out forwards;
+        animation: merge-right 800ms ease-in-out forwards ;
     }
 }
 

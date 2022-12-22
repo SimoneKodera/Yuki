@@ -29,7 +29,8 @@
 
 
   &:hover {
-    // transform: scale(1.03);
+    // transform: scale(1.02); // 改变大小会使内部样式改变
+    transform: translateY(-2px);
     box-shadow: 2px 10px 20px 0.1px #9f7777;
   }
 }

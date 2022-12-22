@@ -1,4 +1,4 @@
-import { SeperateBall, GrooveTab } from "./components"
+import { SeperateBall, GrooveTab, Parabola } from "./components"
 import './index.scss'
 
 export const AnimationPage = () => {
@@ -6,6 +6,7 @@ export const AnimationPage = () => {
         <div className="page-container animation-page">
             <SeperateBall />
             <GrooveTab />
+            <Parabola />
         </div>
     )
 }

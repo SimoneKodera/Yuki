@@ -1,4 +1,3 @@
-import { Button } from 'antd';
 import { useState } from 'react';
 import './index.scss';
 
@@ -8,7 +7,7 @@ export const SeperateBall = () => {
     const addCls = () => {
         SetCls('separate');
         setTimeout(() => {
-            SetCls('separate merge');
+            SetCls('merge');
         }, 2000);
     }
 

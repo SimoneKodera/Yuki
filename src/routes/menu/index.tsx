@@ -11,9 +11,19 @@ const routes = [
         key: 'animation'
     },
     {
-        label: 'About',
-        key: 'about' 
+        label: 'Download',
+        key: 'download' 
     },
+    {
+        label: 'Echarts',
+        key: 'echarts',
+        children: [
+            {
+                label: 'area',
+                key: 'echarts/area'
+            }
+        ]
+    }
 ]
 
 export const SideMenu = () => {
