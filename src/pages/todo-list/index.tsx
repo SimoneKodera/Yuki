@@ -1,24 +1,10 @@
-import './index.scss';
-import { useSearchSpace, useTaskSpace } from './components';
-import { useRef } from 'react';
 import { Button } from 'antd';
-
-interface IDemo {
-    obj: {
-        fun: any;
-    };
-};
+import './index.scss';
 
 export const TodoListPage = () => {
-    const { render: taskRender } = useTaskSpace();
-    const { render: searchRender } = useSearchSpace();
-    const loading = useRef({ name: 'loading' });
-    
-   
-
     return (
         <div>
-            
+            <Button id='containerr'> Simone </Button>
         </div>
     )
 
