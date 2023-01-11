@@ -3,8 +3,8 @@ import { useNavigate } from "react-router"
 
 const routes = [
     {
-        label: 'Todo List',
-        key: 'todo-list'
+        label: 'Drum Kit',
+        key: 'drum-kit'
     },
     {
         label: 'Animation',

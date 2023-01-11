@@ -1,6 +1,7 @@
 import { useRef, useState } from 'react';
 import './index.scss';
 import cs from 'classnames';
+// 音频的导入: require 或 在audio中声明 audio.d.ts 文件
 import tink from '../../../../audio/tink.wav';
 
 export const GrooveTab = () => {
@@ -8,7 +9,7 @@ export const GrooveTab = () => {
 
     return (
         <section className="animation-box groove-tab">
-            <audio src="/Users/jingwen/Desktop/tink.wav" id='tink'></audio>
+            <audio src={tink} id='tink'></audio>
             <div className="tab-wrapper">
                 {[0,0,0].map((v, idx) => (
                     <div
@@ -20,10 +21,6 @@ export const GrooveTab = () => {
                         })}
                         onClick={() => {
                             setTabIndex(idx);
-                            // setTimeout(() => {
-                            //     audioRef.current.currentTime = 0;
-                            //     audioRef.current.play();
-                            // }, 500)
                             const tinkEl = document.getElementById('tink') as any;
                             tinkEl.play();
                         }}

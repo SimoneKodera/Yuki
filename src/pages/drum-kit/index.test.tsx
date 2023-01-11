@@ -1,10 +1,10 @@
 /* eslint-disable testing-library/prefer-screen-queries */
 /* eslint-disable testing-library/no-render-in-setup */
 import { render, fireEvent, RenderResult } from '@testing-library/react';
-import { TodoListPage } from './index';
+import { DrumkitPage } from './index';
 
 // test('存在名为Simone的元素', () => {
-//   const { getByText } = render(<TodoListPage></TodoListPage>);
+//   const { getByText } = render(<DrumkitPage></DrumkitPage>);
 //   // eslint-disable-next-line testing-library/prefer-screen-queries
 //   const el = getByText(/simone/i);
 //   expect(el).toBeInTheDocument();
@@ -14,7 +14,7 @@ let wrapper: RenderResult;
 
 // 运行每一个测试用例前先渲染组件
 beforeEach(() => {
-  wrapper = render(<TodoListPage />);
+  wrapper = render(<DrumkitPage />);
 });
 
 // 为测试一个大的测试单元添加一个描述
