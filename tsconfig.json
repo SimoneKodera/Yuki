@@ -19,9 +19,30 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "noEmit": true,
-    "jsx": "react-jsx"
+    "jsx": "react-jsx",
+    "baseUrl": "./",
+    "paths": {
+      "@assets/*": [
+        "assets/*"
+      ],
+      "@src/*": [
+        "src/*"
+      ]
+    }
+  },
+  "linterOptions": {
+    "exclude": [
+      "node_modules",
+      "server",
+      "main/engine",
+      "dist",
+      "frontend",
+      "build",
+      "scripts"
+    ]
   },
   "include": [
-    "src"
-, "babel.config.js"  ]
+    "src",
+     "babel.config.js"
+  ],
 }
