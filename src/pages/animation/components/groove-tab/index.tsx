@@ -2,7 +2,7 @@ import { useRef, useState } from 'react';
 import './index.scss';
 import cs from 'classnames';
 // 音频的导入: require 或 在audio中声明 audio.d.ts 文件
-import tink from '../../../../audio/tink.wav';
+import tink from '../../../../assets/audio/tink.wav';
 
 export const GrooveTab = () => {
     const [tabIndex, setTabIndex] = useState(1);
