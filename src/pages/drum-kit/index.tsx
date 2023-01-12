@@ -1,11 +1,30 @@
 import './index.scss';
 import drumKitBg from '../../assets/images/drum-bg.jpg';
-import { Space } from 'antd';
+import { Button, Space } from 'antd';
 import { audios } from '../../assets';
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 
 
 export const DrumkitPage = () => {
+    const [status, setStatus] = useState(false);
+    const [recordList, setRecordList] = useState<any>([]);
+
+    const recording = (e: any) => {
+        if ('asdfghjkl'.includes(e.key)) {
+            setRecordList([...recordList, { key: e.key, time:  Date.now()}])
+        }
+    }
+
+    const onSwitchStatus = () => {
+        if (status) {  
+            setStatus(true);
+            document.addEventListener('keydown', recording);
+        } else {
+            document.removeEventListener('keydown', recording);
+            setStatus(false);
+        }
+    }
+
     const drumList = [
         {
             key: 'a',
@@ -70,6 +89,7 @@ export const DrumkitPage = () => {
             backgroundSize: 'no-repeat',
             height: '100vh'
         }}>
+            <Button className='record' onClick={onSwitchStatus}> {status ? 'recording' : 'record'} </Button>
             <Space direction='horizontal' size={15}>
             {drumList.map(drum => (
                 <div className='drum-box' id={`drum-box-${drum.key}`}>
