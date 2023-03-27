@@ -7,6 +7,10 @@ const routes = [
         key: 'drum-kit'
     },
     {
+        label: 'Win 11',
+        key: 'win11'
+    },
+    {
         label: 'Animation',
         key: 'animation'
     },
