@@ -1,1 +1,2 @@
-export * from './animation';
+export * from './all';
+export * from './main';

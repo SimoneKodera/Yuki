@@ -1,0 +1,15 @@
+.main-page {
+  display: flex;
+  height: 100vh;
+
+  & > aside {
+    height: 100%;
+  }
+
+  & > main {
+    flex: 1;
+    height: 100%;
+    overflow-y: auto;
+    position: relative;
+  }
+}

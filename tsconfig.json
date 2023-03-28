@@ -9,6 +9,7 @@
     ],
     "allowJs": true,
     "skipLibCheck": true,
+    "typeRoots": ["./node_modules/@types/", "./src/typings/"],
     "esModuleInterop": true,
     "allowSyntheticDefaultImports": true,
     "strict": true,
@@ -22,21 +23,14 @@
     "jsx": "react-jsx",
     "baseUrl": "./",
     "paths": {
-      "@assets/*": [
-        "assets/*"
-      ],
-      "@src/*": [
-        "src/*"
-      ]
+    
     }
   },
   "linterOptions": {
     "exclude": [
       "node_modules",
       "server",
-      "main/engine",
       "dist",
-      "frontend",
       "build",
       "scripts"
     ]

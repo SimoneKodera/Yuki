@@ -1,16 +1,12 @@
-import { RoutePage, SideMenu } from './routes';
+import { RoutePage } from './routes';
 import './App.scss';
 import '../src/styles/global.scss';
+import './styles/overwrite.scss';
 
 function App() {
   return (
     <div className="App">
-      <aside> 
-        <SideMenu />
-      </aside>
-      <main>
-        <RoutePage />
-      </main>
+      <RoutePage />
     </div>
   );
 }

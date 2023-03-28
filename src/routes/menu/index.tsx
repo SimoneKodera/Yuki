@@ -1,48 +1,47 @@
 import { Menu } from "antd"
-import { useNavigate } from "react-router"
+import { useState } from "react";
+import { useNavigate } from "react-router";
+import Hamburger from 'hamburger-react'
+import { ROUTES } from "../route";
 
 const routes = [
     {
-        label: 'Drum Kit',
-        key: 'drum-kit'
+        label: '全部单词',
+        key: ROUTES.All
     },
     {
-        label: 'Win 11',
-        key: 'win11'
-    },
-    {
-        label: 'Animation',
-        key: 'animation'
-    },
-    {
-        label: 'Download',
-        key: 'download' 
-    },
-    {
-        label: 'Echarts',
-        key: 'echarts',
-        children: [
-            {
-                label: 'area',
-                key: 'echarts/area'
-            }
-        ]
+        label: '已删除',
+        key: ROUTES.Deleted
     }
 ]
 
-export const SideMenu = () => {
-    const navigate = useNavigate();
-
-    const onMenuClick = (e: any) => {
-        navigate(e?.key);
+export const useMenuHamburger = () => { 
+    const [isOpen, setOpen] = useState(true);
+    const render = (
+        <div>
+            <Hamburger toggled={isOpen} toggle={setOpen} />
+        </div>
+    );
+    return {
+        render,
+        isOpen,
+        setOpen
     }
+}
+
+export const SideMenu = (props: {
+    close: () => void;
+}) => {
+    const navigate = useNavigate();
 
     return (
         <Menu
             items={routes}
             style={{ width: '100%', height: '100%' }}
-            mode='inline'
-            onClick={onMenuClick}
+            onClick={(e) => {
+                navigate(e?.key);
+                props?.close();
+            }}
         />
     )
 }
