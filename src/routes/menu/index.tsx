@@ -6,11 +6,11 @@ import { ROUTES } from "../route";
 
 const routes = [
     {
-        label: '全部单词',
+        label: 'All',
         key: ROUTES.All
     },
     {
-        label: '已删除',
+        label: 'Deleted',
         key: ROUTES.Deleted
     }
 ]
@@ -19,7 +19,7 @@ export const useMenuHamburger = () => {
     const [isOpen, setOpen] = useState(true);
     const render = (
         <div>
-            <Hamburger toggled={isOpen} toggle={setOpen} />
+            <Hamburger size={22} rounded toggled={isOpen} toggle={setOpen} />
         </div>
     );
     return {

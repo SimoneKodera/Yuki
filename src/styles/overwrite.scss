@@ -6,3 +6,20 @@
     margin-left: 16px;
   }
 }
+
+
+// 修改激活状态的分页器
+.ant-pagination-item-active {
+  border-color: black;
+
+  &:hover {
+    border-color: black;
+  }
+
+  a {
+    color: black;
+    &:hover {
+      color: black;
+    }
+  }
+}
