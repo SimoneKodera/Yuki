@@ -1,7 +1,8 @@
 {
   "compilerOptions": {
-    "experimentalDecorators": true,
     "target": "es5",
+    "downlevelIteration": true,
+    "experimentalDecorators": true,
     "lib": [
       "dom",
       "dom.iterable",
@@ -23,7 +24,10 @@
     "jsx": "react-jsx",
     "baseUrl": "./",
     "paths": {
-    
+      "@assets/*": ["src/assets/*"],
+      "@assets": ["src/assets/index.tsx"],
+      "@pages/*": ["src/pages/*"],
+      "@pages": ["src/pages/index.ts"],
     }
   },
   "linterOptions": {

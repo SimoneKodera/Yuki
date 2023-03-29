@@ -2,4 +2,19 @@
   .table-wrapper {
     padding: 0 100px;
   }
+
+  * {
+    cursor: default;
+  }
+
+  .selected-row {
+    td {
+      background-color: #f3c7cf29;
+    }
+    &:hover {
+      td {
+        background: #e9899a29 !important;
+      }
+    }
+  }
 }

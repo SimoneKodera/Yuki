@@ -1,4 +1,4 @@
-import { AllPage, MainPage } from "../../pages";
+import { AllPage, MainPage, DeletedPage } from "../../pages";
 import { Route, Routes } from "react-router-dom";
 
 
@@ -22,7 +22,7 @@ export const MainRoutePage = () => {
     return (
         <Routes>
             <Route path='all' element={<AllPage />}></Route>
-            <Route path='deleted' element={<div >deleted</div>}></Route>
+            <Route path='deleted' element={<DeletedPage />}></Route>
         </Routes>
     )
 }
