@@ -20,7 +20,7 @@ RUN yarn build
 FROM nginx:1.21.3-alpine
 
 # 将构建好的项目复制到Nginx的html目录下
-COPY --from=0 /app/dist /usr/share/nginx/html
+COPY --from=0 /app/build /usr/share/nginx/html
 
 # 暴露80端口
 EXPOSE 80
