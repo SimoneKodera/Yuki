@@ -8,13 +8,13 @@ WORKDIR /app
 COPY package*.json ./
 
 # 安装依赖
-RUN npm install
+RUN yarn
 
 # 复制当前目录下的所有文件到工作目录
 COPY . .
 
 # 构建项目
-RUN npm run build
+RUN yarn build
 
 # 使用Nginx镜像作为基础镜像
 FROM nginx:1.21.3-alpine
