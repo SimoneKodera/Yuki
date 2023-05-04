@@ -1,5 +1,5 @@
-import { AllPage, MainPage, DeletedPage, TestPage } from "../../pages";
-import { Route, Routes } from "react-router-dom";
+import { AllPage, MainPage, DeletedPage, TestPage, StudioPage } from "../../pages";
+import { Navigate, Route, Routes } from "react-router-dom";
 
 
 export const ROUTES = {
@@ -7,12 +7,14 @@ export const ROUTES = {
     Main: '/main',
     All: '/main/all',
     Deleted: '/main/deleted',
+    Studio: '/main/studio',
     Test: '/test'
 }
 
 export const RoutePage = () => {
     return (
         <Routes>
+            <Route path='/' element={(<Navigate to='/main/'></Navigate>)}></Route>
             <Route path={ROUTES.Login} element={<div >log in</div>}></Route>
             <Route path={ROUTES.Test} element={<TestPage />}></Route>
             <Route path='/main/*' element={<MainPage />}></Route>
@@ -25,6 +27,7 @@ export const MainRoutePage = () => {
         <Routes>
             <Route path='all' element={<AllPage />}></Route>
             <Route path='deleted' element={<DeletedPage />}></Route>
+            <Route path='studio' element={<StudioPage/>}></Route>
         </Routes>
     )
 }

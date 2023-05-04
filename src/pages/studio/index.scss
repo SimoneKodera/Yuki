@@ -1,0 +1,17 @@
+.studio-page {
+  height: 100%;
+  background-color: antiquewhite;
+  box-sizing: border-box;
+  padding: 36px;
+  display: flex;
+  flex-direction: column;
+  color: brown;
+
+  & > header {
+    height: 60px;
+  }
+
+  & > main {
+    flex: 1;
+  }
+}

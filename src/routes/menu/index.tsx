@@ -12,13 +12,17 @@ const routes = [
     {
         label: 'Deleted',
         key: ROUTES.Deleted
+    },
+    {
+        label: 'Studio',
+        key: ROUTES.Studio
     }
 ]
 
 export const useMenuHamburger = () => { 
     const [isOpen, setOpen] = useState(true);
     const render = (
-        <div>
+        <div style={{position: 'absolute'}}>
             <Hamburger size={22} rounded toggled={isOpen} toggle={setOpen} />
         </div>
     );

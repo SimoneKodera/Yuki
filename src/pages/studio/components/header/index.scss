@@ -1,0 +1,13 @@
+.studio-header{
+  height: 100%;
+  background-color: rgba(224,150,48,0.1);
+
+  .tools-wrapper {
+    height: 100%;
+    align-items: center;
+    padding-left: 20px;
+    .tool{
+      cursor: pointer;
+    }
+  }
+}
