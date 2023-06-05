@@ -1,0 +1,5 @@
+export enum EChatStatus {
+  WATING_RESPONSE = 'WATING_RESPONSE',
+  GENERATING = 'GENERATING',
+  STAND_BY = 'STAND_BY'
+}

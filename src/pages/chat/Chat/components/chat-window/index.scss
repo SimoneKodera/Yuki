@@ -1,0 +1,32 @@
+.chat-window {
+  overflow-y: auto;
+  height: 100%;
+  scroll-behavior: smooth;
+
+  * {
+    margin: 0;
+  }
+
+  .user, .assistant {
+    padding: 24px 0;
+
+    .container {
+      display: flex;
+      align-items: flex-start;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    .avatar {
+      padding: 0 16px;
+      width: 40px;
+    }
+  }
+
+  .assistant {
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    background-color: rgb(246, 246, 247);
+    white-space: break-spaces;
+  }
+}

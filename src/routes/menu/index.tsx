@@ -16,6 +16,10 @@ const routes = [
     {
         label: 'Studio',
         key: ROUTES.Studio
+    },
+    {
+        label: 'Chat',
+        key: ROUTES.Chat
     }
 ]
 
