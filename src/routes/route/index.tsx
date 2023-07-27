@@ -1,4 +1,4 @@
-import { AllPage, MainPage, DeletedPage, TestPage, StudioPage, ChatPage, ChildrenPage, ForwardRefPage } from "../../pages";
+import { AllPage, MainPage, DeletedPage, TestPage, StudioPage, ChatPage, ChildrenPage, ForwardRefPage, UseContextPage } from "../../pages";
 import { Navigate, Route, Routes } from "react-router-dom";
 
 
@@ -11,7 +11,8 @@ export const ROUTES = {
     Children: '/main/children',
     Studio: '/main/studio',
     Test: '/test',
-    ForwardRef: '/main/forwardRef'
+    ForwardRef: '/main/forwardRef',
+    UseContext: '/main/useContext'
 }
 
 export const RoutePage = () => {
@@ -34,6 +35,7 @@ export const MainRoutePage = () => {
             <Route path='chat' element={<ChatPage/>}></Route>
             <Route path='children' element={<ChildrenPage/>}></Route>
             <Route path='forwardRef' element={<ForwardRefPage/>}></Route>
+            <Route path='useContext' element={<UseContextPage/>}></Route>
         </Routes>
     )
 }
