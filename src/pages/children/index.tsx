@@ -46,7 +46,7 @@ const HocComponent = (props: { children?: ReactNode }) => {
   }, []);
 
   return (
-    <div>
+    <div className="page-container">
       <div>示例1: map遍历子元素, 给Button元素添加点击事件;</div>
       {
         Children.map(props.children, (child: any) => {
