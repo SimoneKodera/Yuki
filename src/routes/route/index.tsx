@@ -1,4 +1,4 @@
-import { AllPage, MainPage, DeletedPage, TestPage, StudioPage, ChatPage } from "../../pages";
+import { AllPage, MainPage, DeletedPage, TestPage, StudioPage, ChatPage, ChildrenPage } from "../../pages";
 import { Navigate, Route, Routes } from "react-router-dom";
 
 
@@ -8,6 +8,7 @@ export const ROUTES = {
     All: '/main/all',
     Deleted: '/main/deleted',
     Chat: '/main/chat',
+    Children: '/main/children',
     Studio: '/main/studio',
     Test: '/test'
 }
@@ -30,6 +31,7 @@ export const MainRoutePage = () => {
             <Route path='deleted' element={<DeletedPage />}></Route>
             <Route path='studio' element={<StudioPage/>}></Route>
             <Route path='chat' element={<ChatPage/>}></Route>
+            <Route path='children' element={<ChildrenPage/>}></Route>
         </Routes>
     )
 }

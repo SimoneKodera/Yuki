@@ -20,13 +20,17 @@ const routes = [
     {
         label: 'Chat',
         key: ROUTES.Chat
-    }
+    },
+    {
+        label: 'Children',
+        key: ROUTES.Children
+    },
 ]
 
 export const useMenuHamburger = () => { 
     const [isOpen, setOpen] = useState(true);
     const render = (
-        <div style={{position: 'absolute'}}>
+        <div style={{position: 'absolute', zIndex: 999}}>
             <Hamburger size={22} rounded toggled={isOpen} toggle={setOpen} />
         </div>
     );
