@@ -7,3 +7,4 @@ export * from './chat';
 export * from './children';
 export * from './forwardRef';
 export * from './useContext';
+export * from './dataGuard';

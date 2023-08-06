@@ -33,6 +33,10 @@ const routes = [
         label: 'useContext',
         key: ROUTES.UseContext
     },
+    {
+        label: 'dataGuard',
+        key: ROUTES.DataGuard
+    },
 ]
 
 export const useMenuHamburger = () => { 
