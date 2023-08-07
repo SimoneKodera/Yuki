@@ -1,4 +1,4 @@
-import { AllPage, MainPage, DeletedPage, TestPage, StudioPage, ChatPage, ChildrenPage, ForwardRefPage, UseContextPage, DataGuardPage } from "../../pages";
+import { AllPage, MainPage, DeletedPage, TestPage, StudioPage, ChatPage, ChildrenPage, ForwardRefPage, UseContextPage, DataGuardPage, BetterTreePage } from "../../pages";
 import { Navigate, Route, Routes } from "react-router-dom";
 
 
@@ -14,6 +14,7 @@ export const ROUTES = {
     ForwardRef: '/main/forwardRef',
     UseContext: '/main/useContext',
     DataGuard: '/main/dataGuard',
+    BetterTree: '/main/BetterTree'
 }
 
 export const RoutePage = () => {
@@ -38,6 +39,7 @@ export const MainRoutePage = () => {
             <Route path='forwardRef' element={<ForwardRefPage/>}></Route>
             <Route path='useContext' element={<UseContextPage/>}></Route>
             <Route path='dataGuard' element={<DataGuardPage/>}></Route>
+            <Route path='BetterTree' element={<BetterTreePage/>}></Route>
         </Routes>
     )
 }

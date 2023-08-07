@@ -8,3 +8,4 @@ export * from './children';
 export * from './forwardRef';
 export * from './useContext';
 export * from './dataGuard';
+export * from './betterTree';

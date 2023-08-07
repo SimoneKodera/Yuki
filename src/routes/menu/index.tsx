@@ -37,6 +37,10 @@ const routes = [
         label: 'dataGuard',
         key: ROUTES.DataGuard
     },
+    {
+        label: 'betterTree',
+        key: ROUTES.BetterTree
+    },
 ]
 
 export const useMenuHamburger = () => { 
