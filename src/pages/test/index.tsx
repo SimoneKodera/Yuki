@@ -1,4 +1,4 @@
-import React, { useDeferredValue, useState } from "react";
+import React, { useState } from "react";
 
 
 const Component1 = () => { 

@@ -1,13 +1,11 @@
-import ReactDOM from 'react-dom/client';
+
 import './index.css';
 import App from './App';
 import { HashRouter } from 'react-router-dom';
 import { ConfigProvider } from 'antd';
+import ReactDOM from 'react-dom';
 
-const root = ReactDOM.createRoot(
-  document.getElementById('root') as HTMLElement
-);
-root.render(
+ReactDOM.render(
   <HashRouter>
     {/* 参考 SeedToken */}
     <ConfigProvider theme={{
@@ -19,6 +17,7 @@ root.render(
     }}>
       <App />
     </ConfigProvider>
-  </HashRouter>
+  </HashRouter>,
+  document.getElementById('root') as HTMLElement
 );
 
