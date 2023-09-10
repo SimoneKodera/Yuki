@@ -37,6 +37,7 @@
     "dotenv-expand": "^5.1.0",
     "echarts": "^5.4.1",
     "eslint": "^8.3.0",
+    "@bixi-design/lint": "4.0.2",
     "eslint-config-react-app": "^7.0.1",
     "eslint-webpack-plugin": "^3.1.1",
     "file-loader": "^6.2.0",
